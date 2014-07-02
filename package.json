@@ -1,0 +1,34 @@
+{
+  "name": "dir-template",
+  "version": "0.0.0",
+  "description": "create a directory structure based on a template",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graceful-fs": "^3.0.2",
+    "wait-for": "^1.0.0"
+  },
+  "devDependencies": {
+    "grape": "^1.0.0",
+    "kgo": "^1.0.0",
+    "mock-fs": "^2.3.1",
+    "rimraf": "^2.2.8",
+    "rm-rf": "0.0.2",
+    "tape": "^2.13.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoryNunn/dir-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/dir-template/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/dir-template"
+}

@@ -1,6 +1,6 @@
 {
   "name": "dir-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "create a directory structure based on a template",
   "main": "index.js",
   "scripts": {

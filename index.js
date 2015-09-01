@@ -6,7 +6,7 @@ function template(map, currentPath, after){
     for(var key in map){
         var dirPath = path.join(currentPath, key);
 
-        fs.mkdir(dirPath, after(function(){
+        fs.mkdirs(dirPath, after(function(){
             template(map[key], dirPath, after);
         }));
     }

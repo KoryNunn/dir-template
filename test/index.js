@@ -33,7 +33,7 @@ kgo
 })
 ('2', ['1'], function(nothing, done){
     test('creates new deep structure', function(t){
-        t.plan(1);
+        t.plan(2);
 
         dirTemplate({
             'things': {
@@ -42,20 +42,20 @@ kgo
                     'dooby':{}
                 }
             }
-        }, fs.stat.bind(fs, './things/stuff/whatever', function(error, stats){
-             if(error){
-                t.fail(error);
-            }else{
-                t.ok(stats.isDirectory());
-            }
+        }, function(){
+            var whateverStat = fs.statSync('./things/stuff/whatever')
+            var doobieStat = fs.statSync('./things/stuff/whatever')
+
+            t.ok(whateverStat.isDirectory());
+            t.ok(doobieStat.isDirectory());
+
             cleanup();
             done();
-        }));
+        });
     });
 })
-('2', ['1'], function(nothing, done){
+('3', ['2'], function(nothing, done){
     test('creates at a different path', function(t){
-        console.log('wat');
         t.plan(1);
 
         dirTemplate({

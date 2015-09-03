@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graceful-fs": "^3.0.2",
+    "fs-extra": "^0.24.0",
     "wait-for": "^1.0.0"
   },
   "devDependencies": {

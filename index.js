@@ -3,13 +3,13 @@ var fs = require('fs-extra'),
     waitFor = require('wait-for');
 
 function template(map, currentPath, after){
-    for(var key in map){
+    map && Object.keys(map).forEach(function(key){
         var dirPath = path.join(currentPath, key);
 
         fs.mkdirs(dirPath, after(function(){
             template(map[key], dirPath, after);
         }));
-    }
+    });
 }
 
 function dirTemplate(map, currentPath, done){

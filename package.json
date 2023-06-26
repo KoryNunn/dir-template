@@ -10,13 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^0.24.0",
-    "mock-fs": "^3.8.0",
+    "mock-fs": "^4.0.0",
     "wait-for": "^1.0.0"
   },
   "devDependencies": {
     "grape": "^1.0.0",
     "kgo": "^1.0.0",
-    "mock-fs": "^2.3.1",
+    "mock-fs": "^4.0.0",
     "rimraf": "^2.2.8",
     "rm-rf": "0.0.2",
     "tape": "^2.13.3"

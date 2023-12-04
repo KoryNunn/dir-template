@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs-extra": "^0.24.0",
+    "fs-extra": "^1.0.0",
     "mock-fs": "^3.8.0",
     "wait-for": "^1.0.0"
   },
